@@ -77,6 +77,10 @@
 
 <h1>Student Management System</h1>
 
+<div th:if="${error}" style="background:#ffe0e0;color:#c00;border:1px solid #f5c6c6;padding:10px 15px;border-radius:4px;margin-bottom:15px;">
+    <strong>Error:</strong> <span th:text="${error}"></span>
+</div>
+
 <form th:action="@{/students}" th:object="${student}" method="post">
 
     <input type="text" th:field="*{name}" placeholder="Name" required>
