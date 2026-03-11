@@ -1,3 +1,9 @@
+# H2 file database
+data/
+
+# README
+README.md
+
 # Maven
 target/
 !**/src/main/**/target/
@@ -23,7 +29,7 @@ logs/
 *.ear
 *.nar
 
-# Images
+# Images (but keep assets/ folder for README screenshots)
 *.png
 *.jpg
 *.jpeg
@@ -33,6 +39,7 @@ logs/
 *.webp
 *.bmp
 *.tiff
+!assets/
 
 # IDE - IntelliJ IDEA
 .idea/
